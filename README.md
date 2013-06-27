@@ -1,6 +1,21 @@
 Shrimpboy
 =========
 
+TO RUN
+=========
+Im assuming you have Eclipse and have downloaded git.
+
+first clone the repo by running this command from your workspace root
+git clone https://github.com/conmoran238/shrimpboy.git
+
+second open eclipse and select file>import>General>"Existing Projects into Workspace"
+Select the folder in your root workspace which should be called "shrimpboy"
+
+Press the big green Run arrow and run the code as an application
+
+DESCRIPTION
+=========
+
 This is a java game made both to promote animal welfare and fighting against experimenting to make shrimp bigger.
 And also for my friend Cormac who unfortunately will soon be undergoing surgery. And who loves to eat shrimp.
 Here is a website directory for the game we prepared yet unfortnately time ran away on us so we could not convert it to applet with the time we had.
