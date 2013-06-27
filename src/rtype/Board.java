@@ -46,7 +46,7 @@ public class Board extends JPanel implements ActionListener {
 
         addKeyListener(new TAdapter());
         setFocusable(true);
-        setBackground(Color.BLACK);
+        setBackground(Color.BLUE);
         setDoubleBuffered(true);
         ingame = true;
 
@@ -100,13 +100,12 @@ public class Board extends JPanel implements ActionListener {
             }
 
             g2d.setColor(Color.WHITE);
-            g2d.drawString("Score:"+""+score+"Aliens left: " + aliens.size(), 5, 15);
+            g2d.drawString("Score:"+""+score+" "+"Aliens left: " + aliens.size(), 5, 15);
 
 
         } else {
-            String msg = "Game Over";
-            String msg1 = "Score ="+" " + score;
-            Font small = new Font("Helvetica", Font.BOLD, 14);
+            String msg1 = "Game Over"+ " ---  "+"Score ="+" " + score;
+            Font small = new Font("Hvetica", Font.BOLD, 14);
             FontMetrics metr = this.getFontMetrics(small);
 
             g.setColor(Color.white);
@@ -124,7 +123,10 @@ public class Board extends JPanel implements ActionListener {
 
         if (aliens.size()==0) {
         	String msg = "You won";
-        	String msg1 = "Score = " + score;
+        	String msg1 = "Score = " + score+ "Topscore!!";
+        	timer = new Timer(10, this);
+            timer.start();
+           
             ingame = false;
         }
 
@@ -176,9 +178,10 @@ public class Board extends JPanel implements ActionListener {
                 Rectangle r2 = a.getBounds();
 
                 if (r1.intersects(r2)) {
-                    m.setVisible(false);
+                    m.setVisible(false); 
                     a.setVisible(false);
-                    score = + 1;
+                    score =score+50;//I mean here  The game feels more rewarding if the number is greater. Lets make it a bit lower still about 50
+                    System.out.println("Something died.");
                 }
             }
         }

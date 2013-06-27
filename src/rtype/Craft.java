@@ -4,9 +4,11 @@ import java.awt.Image;
 import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
-import java.util.ArrayList;
+import java.util.*;
+
 
 import javax.swing.ImageIcon;
+
 
 public class Craft 
 
@@ -27,7 +29,7 @@ public class Craft
 
 
     public Craft() {
-        ImageIcon ii = new ImageIcon(Craft.class.getResource(craft));
+        ImageIcon ii = new ImageIcon(Craft.class.getResource("craft.png"));
         image = ii.getImage();
         width = image.getWidth(null);
         height = image.getHeight(null);

@@ -22,7 +22,7 @@ public class missile {
 		public missile (int x, int y){
 			
 			javax.swing.ImageIcon ii =
-				new ImageIcon (this.getClass().getResource("C:/Users/camaraadmin/workspace/crainngames/src/rtype/missile.png"));
+				new ImageIcon (this.getClass().getResource("missile.png"));
 			image = ii.getImage();
 					visible = true;
 					width = image.getWidth(null);

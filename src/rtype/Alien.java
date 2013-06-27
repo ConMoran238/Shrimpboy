@@ -17,7 +17,7 @@ public class Alien {
 	private Image image;
 	
 	public Alien(int x, int y) {
-		ImageIcon ii =  new ImageIcon(this.getClass().getResource(craft));
+		ImageIcon ii =  new ImageIcon(this.getClass().getResource("alien.png"));
 		image =  ii.getImage();
 		width = image.getWidth(null);
 		height = image.getHeight(null);
