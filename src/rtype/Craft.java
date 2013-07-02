@@ -27,7 +27,7 @@ public class Craft
     private Image image;
     private ArrayList missiles;
 
-
+//star-made.org
     public Craft() {
         ImageIcon ii = new ImageIcon(Craft.class.getResource("craft.png"));
         image = ii.getImage();

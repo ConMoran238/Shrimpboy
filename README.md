@@ -76,6 +76,8 @@ Here is a website directory for the game we prepared yet unfortnately time ran a
 		<p>who unfortunately is a bit unwell at the moment and he really likes shrimp. I suppose I better say something about the environment</p>
 		<p>here so a problem is some people are gentically altering shrimp and feeding them certain things so that the grow huge. Which is terrible</p>
 		<p>for the environment. And well if they go to far we may all need a shrimp-boy some day:D</p>
+		
+		
 	  
 	  </div>
        <div id="footer" class="dark rounded">
